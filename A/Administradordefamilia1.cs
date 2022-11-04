@@ -41,7 +41,8 @@ namespace A
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            Altafamilia altafamilia = new Altafamilia();
+            altafamilia.ShowDialog();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)

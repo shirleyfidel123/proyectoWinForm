@@ -93,15 +93,15 @@ namespace A
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 25);
+            this.label1.Size = new System.Drawing.Size(266, 25);
             this.label1.TabIndex = 6;
-            this.label1.Text = "sistema de gestion de familia ";
+            this.label1.Text = "Administrador de familia";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 533);
+            this.ClientSize = new System.Drawing.Size(780, 533);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -109,7 +109,7 @@ namespace A
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.dgvFamilia);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Administradordefamilia";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFamilia)).EndInit();
             this.ResumeLayout(false);

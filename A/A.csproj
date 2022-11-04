@@ -89,17 +89,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Altafamilia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Altafamilia.Designer.cs">
+      <DependentUpon>Altafamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administradordefamilia1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administradordefamilia1.Designer.cs">
+      <DependentUpon>Administradordefamilia1.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Altafamilia.resx">
+      <DependentUpon>Altafamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administradordefamilia1.resx">
+      <DependentUpon>Administradordefamilia1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
