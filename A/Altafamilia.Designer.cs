@@ -1,4 +1,4 @@
-﻿namespace A
+﻿namespace proyecto
 {
     partial class Altafamilia
     {
@@ -34,8 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ocupacion = new System.Windows.Forms.Label();
-            this.textParentesco = new System.Windows.Forms.TextBox();
-            this.textOcupacion = new System.Windows.Forms.TextBox();
+            this.txtParentesco = new System.Windows.Forms.TextBox();
+            this.txtOcupacion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -48,6 +48,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btCerrar
             // 
@@ -95,19 +96,20 @@
             this.ocupacion.TabIndex = 5;
             this.ocupacion.Text = "Ocupacion";
             // 
-            // textParentesco
+            // txtParentesco
             // 
-            this.textParentesco.Location = new System.Drawing.Point(140, 230);
-            this.textParentesco.Name = "textParentesco";
-            this.textParentesco.Size = new System.Drawing.Size(100, 20);
-            this.textParentesco.TabIndex = 6;
+            this.txtParentesco.Location = new System.Drawing.Point(140, 230);
+            this.txtParentesco.Name = "txtParentesco";
+            this.txtParentesco.Size = new System.Drawing.Size(100, 20);
+            this.txtParentesco.TabIndex = 6;
             // 
-            // textOcupacion
+            // txtOcupacion
             // 
-            this.textOcupacion.Location = new System.Drawing.Point(140, 322);
-            this.textOcupacion.Name = "textOcupacion";
-            this.textOcupacion.Size = new System.Drawing.Size(100, 20);
-            this.textOcupacion.TabIndex = 7;
+            this.txtOcupacion.Location = new System.Drawing.Point(140, 322);
+            this.txtOcupacion.Name = "txtOcupacion";
+            this.txtOcupacion.Size = new System.Drawing.Size(100, 20);
+            this.txtOcupacion.TabIndex = 7;
+            this.txtOcupacion.TextChanged += new System.EventHandler(this.textOcupacion_TextChanged);
             // 
             // txtApellido
             // 
@@ -118,7 +120,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(140, 59);
+            this.txtNombre.Location = new System.Drawing.Point(140, 66);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 9;
@@ -130,8 +132,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtApellido);
-            this.Controls.Add(this.textOcupacion);
-            this.Controls.Add(this.textParentesco);
+            this.Controls.Add(this.txtOcupacion);
+            this.Controls.Add(this.txtParentesco);
             this.Controls.Add(this.ocupacion);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -154,8 +156,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label ocupacion;
-        private System.Windows.Forms.TextBox textParentesco;
-        private System.Windows.Forms.TextBox textOcupacion;
+        private System.Windows.Forms.TextBox txtParentesco;
+        private System.Windows.Forms.TextBox txtOcupacion;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
     }

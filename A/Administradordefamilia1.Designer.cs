@@ -93,9 +93,9 @@ namespace A
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 25);
+            this.label1.Size = new System.Drawing.Size(329, 25);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Administrador de familia";
+            this.label1.Text = "Sistema de gestion de familia ";
             // 
             // Form1
             // 
