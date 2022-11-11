@@ -38,6 +38,7 @@ namespace proyecto
             flia.parentesco = txtParentesco.ToString();
             flia.ocupacion = txtOcupacion.ToString();
             flia.agregarfamilia(flia);
+            this.Close();
 
         }
 

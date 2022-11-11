@@ -42,7 +42,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(471, 382);
+            this.button1.Location = new System.Drawing.Point(279, 337);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             // btCerrar
             // 
-            this.btCerrar.Location = new System.Drawing.Point(355, 382);
+            this.btCerrar.Location = new System.Drawing.Point(89, 337);
             this.btCerrar.Name = "btCerrar";
             this.btCerrar.Size = new System.Drawing.Size(75, 23);
             this.btCerrar.TabIndex = 1;
@@ -63,7 +63,7 @@
             // Nombre
             // 
             this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(53, 66);
+            this.Nombre.Location = new System.Drawing.Point(12, 36);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(44, 13);
             this.Nombre.TabIndex = 2;
@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 139);
+            this.label2.Location = new System.Drawing.Point(12, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 3;
@@ -81,7 +81,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 233);
+            this.label3.Location = new System.Drawing.Point(12, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 4;
@@ -90,7 +90,7 @@
             // ocupacion
             // 
             this.ocupacion.AutoSize = true;
-            this.ocupacion.Location = new System.Drawing.Point(58, 322);
+            this.ocupacion.Location = new System.Drawing.Point(12, 261);
             this.ocupacion.Name = "ocupacion";
             this.ocupacion.Size = new System.Drawing.Size(59, 13);
             this.ocupacion.TabIndex = 5;
@@ -98,38 +98,38 @@
             // 
             // txtParentesco
             // 
-            this.txtParentesco.Location = new System.Drawing.Point(140, 230);
+            this.txtParentesco.Location = new System.Drawing.Point(89, 188);
             this.txtParentesco.Name = "txtParentesco";
-            this.txtParentesco.Size = new System.Drawing.Size(100, 20);
+            this.txtParentesco.Size = new System.Drawing.Size(265, 20);
             this.txtParentesco.TabIndex = 6;
             // 
             // txtOcupacion
             // 
-            this.txtOcupacion.Location = new System.Drawing.Point(140, 322);
+            this.txtOcupacion.Location = new System.Drawing.Point(89, 258);
             this.txtOcupacion.Name = "txtOcupacion";
-            this.txtOcupacion.Size = new System.Drawing.Size(100, 20);
+            this.txtOcupacion.Size = new System.Drawing.Size(265, 20);
             this.txtOcupacion.TabIndex = 7;
             this.txtOcupacion.TextChanged += new System.EventHandler(this.textOcupacion_TextChanged);
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(140, 139);
+            this.txtApellido.Location = new System.Drawing.Point(89, 115);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.Size = new System.Drawing.Size(265, 20);
             this.txtApellido.TabIndex = 8;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(140, 66);
+            this.txtNombre.Location = new System.Drawing.Point(89, 36);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(265, 20);
             this.txtNombre.TabIndex = 9;
             // 
             // Altafamilia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(388, 377);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtOcupacion);

@@ -44,6 +44,7 @@ namespace A
         {
             Altafamilia altafamilia = new Altafamilia();
             altafamilia.ShowDialog();
+            dgvFamilia.DataSource = familia1.llenarFamilia();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
