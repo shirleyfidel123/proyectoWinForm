@@ -62,12 +62,24 @@ namespace Modelo
             MySqlCommand instruccion = new MySqlCommand();
             instruccion.Connection = cnx;
             cnx.Open();
-            instruccion.CommandText ="insert into familia(nombre, apellido, parentesco, ocupacion) values('" + pFlia.nombre + "', '" + pFlia.apellido + "', '"+pFlia.parentesco + "','" + pFlia.ocupacion +"')";
+            instruccion.CommandText ="insert into familia(nombre, apellido, parentesco, ocupacion) values('" + pFlia.nombre + "', '" + pFlia.apellido + "', '"+pFlia.parentesco + "','" + pFlia.ocupacion + "')";
 
                 //"delete from familia where idfamilia = '" + pId + "'";
             instruccion.ExecuteNonQuery();
             cnx.Close();
             
+        }
+
+
+      
+        public Familia obtenerFamilia(string pIdFamilia)
+        {
+            this.nombre = "pepe";
+            this.apellido = "toto";
+            this.idFamilia = Convert.ToInt32(pIdFamilia);
+            this.ocupacion = "titi";
+            this.parentesco = "me canse";
+            return this;
         }
     }
 
