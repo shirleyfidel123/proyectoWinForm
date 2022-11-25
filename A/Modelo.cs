@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using System.Security.Cryptography;
 using Org.BouncyCastle.Utilities.Collections;
+using Org.BouncyCastle.Crypto.Tls;
 
 namespace Modelo
 {
@@ -74,13 +75,44 @@ namespace Modelo
       
         public Familia obtenerFamilia(string pIdFamilia)
         {
-            this.nombre = "pepe";
-            this.apellido = "toto";
-            this.idFamilia = Convert.ToInt32(pIdFamilia);
-            this.ocupacion = "titi";
-            this.parentesco = "me canse";
+            MySqlConnection cnx = new MySqlConnection("server=10.120.2.123;userid=alumn517;password=Alumno2022;database=repo_517");
+            //ServerName: win2016-01
+            MySqlCommand instuccion = new MySqlCommand();
+            instuccion.Connection = cnx;
+
+            //tabla
+            cnx.Open();
+            MySqlDataAdapter Adapter = new MySqlDataAdapter();
+            instuccion.CommandText = "select * from familia where idfamilia = '" + pIdFamilia + "'";
+            Adapter.SelectCommand = instuccion;
+            DataSet setDatos = new DataSet();
+            Adapter.Fill(setDatos);
+            DataTable tabla = new DataTable();
+            tabla = setDatos.Tables[0];
+            cnx.Close();
+
+            this.nombre = tabla.Rows[0][1].ToString();
+            this.apellido = tabla.Rows[0][2].ToString();
+
+            this.ocupacion = tabla.Rows[0][4].ToString();
+            this.parentesco = tabla.Rows[0][3].ToString();
+
+                
             return this;
         }
+       public void actualizarFamilia(Familia pFlia, string idFamilia)
+        {
+            MySqlConnection cnx = new MySqlConnection("server=10.120.2.123; userid=alumn517;password=Alumno2022;database=repo_517");
+            MySqlCommand instruccion = new MySqlCommand();
+            instruccion.Connection = cnx;
+            cnx.Open();
+            instruccion.CommandText = "update familia set nombre ='" + pFlia.nombre + "' , apellido = '" + pFlia.apellido + "', parentesco = '" + pFlia.parentesco + "', ocupacion = '" + pFlia.ocupacion + "' where idfamilia = '" + idFamilia + "'";
+
+            instruccion.ExecuteNonQuery();
+            cnx.Close();
+
+        }
     }
+    
 
 }

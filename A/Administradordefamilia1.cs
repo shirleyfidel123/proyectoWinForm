@@ -13,7 +13,7 @@ using proyecto;
 
 namespace A
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
 
         Familia familia1 = new Familia();
@@ -25,13 +25,13 @@ namespace A
 
         private void btCompletar_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             dgvFamilia.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            
+
             dgvFamilia.DataSource = familia1.llenarFamilia();
         }
 
@@ -42,22 +42,13 @@ namespace A
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Altafamilia altafamilia = new Altafamilia("a","");
+            Altafamilia altafamilia = new Altafamilia("a", "");
             altafamilia.Text = "alta de familia ";
             altafamilia.ShowDialog();
             dgvFamilia.DataSource = familia1.llenarFamilia();
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            string idfamilia = dgvFamilia[0, dgvFamilia.CurrentRow.Index].Value.ToString();
-            
 
-            Altafamilia modificarFamilia = new Altafamilia("m",idfamilia);
-            modificarFamilia.Text = "modificar familia";
-            modificarFamilia.ShowDialog();
-
-        }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -66,5 +57,30 @@ namespace A
 
             dgvFamilia.DataSource = familia1.llenarFamilia();
         }
-    }
-}
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            string idfamilia = dgvFamilia[0, dgvFamilia.CurrentRow.Index].Value.ToString();
+
+            Altafamilia modificarFamilia = new Altafamilia("m", idfamilia);
+            modificarFamilia.Text = "modificar familia";
+            modificarFamilia.ShowDialog();
+
+
+            dgvFamilia.DataSource = familia1.llenarFamilia();
+        }
+
+
+
+
+}  
+} 
+        
+
+
+
+
+
+
+            
+

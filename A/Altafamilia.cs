@@ -16,12 +16,12 @@ namespace proyecto
     public partial class Altafamilia : Form
     {
         Familia flia=new Familia();
-        string nombre = "";
+        string origen = "";
         public Altafamilia(string pOrigen, string pIdFamilia)
         {
             if (pOrigen == "m")
             {
-
+                origen = pIdFamilia;
                 flia.obtenerFamilia(pIdFamilia);
             }
             InitializeComponent();
@@ -40,13 +40,22 @@ namespace proyecto
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) /// ACEPTAR
         {
             flia.nombre = txtNombre.Text;
             flia.apellido = txtApellido.Text;
             flia.parentesco = txtParentesco.Text;
             flia.ocupacion = txtOcupacion.Text;
-            flia.agregarfamilia(flia);
+
+            if (origen == "")
+            {
+                flia.agregarfamilia(flia);
+            } else
+            {
+                flia.actualizarFamilia(flia, origen);
+            }
+
+            
             this.Close();
 
         }
